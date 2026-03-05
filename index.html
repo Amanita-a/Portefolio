@@ -8,26 +8,97 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portefolio</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
         <!-- <link rel="shortcut icon" href="favicon" type="image/png"> -->
+        <script src="./assets/js/script.js" defer></script>
     </head>
 
     <body>
         <div>
             <!-- Images en svg des deux icônes servant à faire la transition en le light mode et le dark mode -->
-            <img src="./assets/images/iconelightmode.svg" alt="icône de soleil">
-            <img src="./assets/images/iconedarkmode.svg" alt="icône de lune">
+
+            <!-- <img src="./assets/images/iconelightmode.svg" alt="icône de soleil">
+            <img src="./assets/images/iconedarkmode.svg" alt="icône de lune"> -->
         </div>
-        <main>
-            <div class="pageHeader">
 
-            </div>
-            <div class="pageContent">
 
-            </div>
-            <div></div>
-        </main>
-        <footer></footer>
         
+        <!-- Carte principale possédant les 3 boutons -->
+        <section class="card">
+            <div class="card-header"></div>
+            <h1>HI!</h1>
+            <!-- div contenant les boutons -->
+            <div class="menu">
+                <!-- bouton a propos -->
+                <div class="item">
+                    <div class="icon" id="boutonAPropos">
+                        <img src="./assets/images/iconeApropos.svg" alt="">
+                    </div>
+                    <p>A propos</p>
+                </div>
+                <!-- bouton projet -->
+                <div class="item">
+                    <div class="icon" id="boutonProjet">
+                        <img src="./assets/images/iconeProjet.svg" alt="">
+                    </div>
+                    <p>Projet</p>
+                </div>
+                <!-- bouton contact -->
+                <div class="item">
+                    <div class="icon" id="boutonContact">
+                        <img src="./assets/images/iconeContact.svg" alt="">
+                    </div>
+                    <p>Contact</p>
+                </div>
+            </div>
+        </section>
+
+
+        <div id="pageAPropos">
+            <div id="contenueAPropos">
+                <span class="fermerLaPage" id="croixAPropos">X</span>
+                <div class="titreAPropos">
+                    <h2>My name</h2>
+                    <p>Développeur web</p>
+                </div>
+                <div class="texteAPropos">
+                    <p>gheuikgvnejdbvfgekivb jikehvbjeksgvnbejk;svgneosknlszvikujdvwlgbvjgeklzsqvnksilzhvbnoezshbnvqswzlh</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="pageProjet">
+            
+            <div id="modeDeTravail">
+                <span class="fermerLaPage" id="croixProjet">X</span>
+                <div id="logiciel">
+                    <h3>Outils Utilisés</h3>
+                    <p>github,vsCode,docker,react .....</p>
+                </div>
+                <div id="languages">
+                    <p>javascript,html,css,php</p>
+                </div>
+            </div>
+            <div id="listeProjet">
+                <h2>Projet</h2>
+            </div>
+        </div>
+
+
+        <div id="pageContact">
+            <span class="fermerLaPage" id="croixContact">X</span>
+            <p>blah blah blah</p>
+            <button>salut</button>
+        </div>
+
+
+
+        <div class="background-bottom">
+            <img src="./assets/images/logoGithub.svg" alt="">
+        </div>
+
+
+
     </body>
 
 
