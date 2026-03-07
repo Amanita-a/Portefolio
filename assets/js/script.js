@@ -15,23 +15,33 @@
 
 
 
-boutonAPropos.onclick = function() {
+boutonAPropos.addEventListener("click", () =>{
     aPropos.classList.add("afficher");
-}
-croixAPropos.onclick = function() {
+});
+croixAPropos.addEventListener("click", () =>{
     aPropos.classList.remove("afficher");
-}
+});
+document.addEventListener("click", (event) => {
+
+    if (!aPropos.contains(event.target) && 
+        !boutonAPropos.contains(event.target)) {
+
+        aPropos.classList.remove("afficher");
+    }
+
+});
+
 boutonProjet.onclick = function() {
     projet.classList.add("afficher");
 }
 croixProjet.onclick = function() {
     projet.classList.remove("afficher");
 }
-boutonContact.onclick = function() {
+boutonContact.addEventListener("click", () =>{
     contact.classList.add("afficher");
-}
-croixContact.onclick = function() {
+});
+croixContact.addEventListener("click", () =>{
     contact.classList.remove("afficher");
-}
+});
 
 

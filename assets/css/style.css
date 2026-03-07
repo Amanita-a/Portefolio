@@ -102,18 +102,38 @@ h1{
 /* ------------------------------------------------ Page A Propos */
 
 #pageAPropos{
-    display: none;
     position: fixed;
     z-index: 2;
-    background-color: #CFCFCF;
+    background-color: #FFFCF2;
     height: 700px;
     width: 870px;
     border: #292E1E solid 2px;
     text-align: center;
     border-radius: 10px;
+    transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+    transform 0.25s ease,
+    opacity 0.25s,
+    visibility 0s linear 0.25s;
+    pointer-events: none;
 }
 #pageAPropos.afficher{
-    display: block;
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+    transition:
+    transform 0.25s cubic-bezier(.34,1.56,.64,1),
+    opacity 0.25s,
+    visibility 0s;
+    pointer-events: auto;
+}
+#contenueAPropos{
+    display: grid;
+    height: 664px;
+    grid-template-rows: 1fr 3fr;
 }
 
 .fermerLaPage{
@@ -121,6 +141,7 @@ h1{
     right: 8px;
     cursor: pointer;
     position: absolute;
+    color: #FFFFFF;
 }
 .pageHeader{
     background:#69140E;
@@ -134,12 +155,15 @@ h1{
     border-bottom: #292E1E 2px solid;
     justify-content: center;
     align-items: center;
+    background-color: #FFFFFF;
 }
 .partieImage{
+    
     &>img{
         height: 150px;
         width: 150px;
         border-radius: 75px;
+        border: #292E1E 2px solid;
         margin-right: 50px;
     }
 }
@@ -152,6 +176,23 @@ h1{
         font-size: 20px;
         
     }
+}
+.texteAPropos{
+    overflow-y: auto;
+    &>p{
+        margin: 15px;
+        font-size: 20px;
+    }
+}
+.texteAPropos::-webkit-scrollbar {
+  width: 7px;
+}
+.texteAPropos::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+.texteAPropos::-webkit-scrollbar-thumb {
+  background: #292E1E;
+  border-radius: 20px;
 }
 
 /* -------------------- page projet */
