@@ -240,8 +240,11 @@ h1{
 }
 #logiciel{
     display: flex;
+    flex-direction: column;
 }
 #languages{
+    display: flex;
+    flex-direction: column;
 }
 .illustrationProjet{
     transform: scale(1);
@@ -258,8 +261,8 @@ h1{
     transform: scale(1.05);
 }
 #listeProjet{
-    overflow-y: auto;
-    height: 459px;
+    overflow-y: scroll;
+    height: 458px;
     &>h2{
         text-align: center;
     }
@@ -280,8 +283,44 @@ h1{
         &>button{
             height: 30px;
             width: 50px;
-            margin-top: 20px;
-            margin-left: 50px;
+            margin: 25px 5px 5px 50%;
+            transform: translateX(-50%);
+            border: none;
+            border-radius: 3px;
+            background:
+            linear-gradient(#292E1E 0 0) top left,
+            linear-gradient(#292E1E 0 0) top right,
+            linear-gradient(#292E1E 0 0) bottom right,
+            linear-gradient(#292E1E 0 0) bottom left,
+            #f79386;
+
+            background-repeat:no-repeat;
+
+            background-size:
+            0% 2px,
+            2px 0%,
+            0% 2px,
+            2px 0%;
+
+            transition:
+            background-size 0.3s,
+            margin 0.3s ease,
+            margin-left 0.3s ease,
+            height 0.3s ease,
+            width 0.3s ease,
+            background-color 0.3s ease
+            ;
+        }
+        &>button:hover{
+            background-size:
+            100% 2px,   
+            2px 100%,   
+            100% 2px,   
+            2px 100%;
+            background-color:#ffffff;
+            margin: 20px 0px 0px 50%;
+            height: 40px;
+            width: 60px;
         }
     }
 }
