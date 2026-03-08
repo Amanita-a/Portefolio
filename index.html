@@ -1,11 +1,147 @@
 <!DOCTYPE html>
+
+
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portefolio</title>
-</head>
-<body>
-    
-</body>
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portefolio</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <!-- <link rel="shortcut icon" href="favicon" type="image/png"> -->
+        <script src="./assets/js/script.js" defer></script>
+    </head>
+
+    <body>
+        <div>
+            <!-- Images en svg des deux icônes servant à faire la transition en le light mode et le dark mode -->
+
+            <!-- <img src="./assets/images/iconelightmode.svg" alt="icône de soleil">
+            <img src="./assets/images/iconedarkmode.svg" alt="icône de lune"> -->
+        </div>
+
+
+        
+        <!-- Carte principale possédant les 3 boutons -->
+        <section class="card">
+            <div class="card-header"></div>
+            <h1>HI!</h1>
+            <!-- div contenant les boutons -->
+            <div class="menu">
+                <!-- bouton a propos -->
+                <div class="item">
+                    <div class="icon" id="boutonAPropos">
+                        <img src="./assets/images/iconeApropos.svg" alt="">
+                    </div>
+                    <p>A propos</p>
+                </div>
+                <!-- bouton projet -->
+                <div class="item">
+                    <div class="icon" id="boutonProjet">
+                        <img src="./assets/images/iconeProjet.svg" alt="">
+                    </div>
+                    <p>Projet</p>
+                </div>
+                <!-- bouton contact -->
+                <div class="item">
+                    <div class="icon" id="boutonContact">
+                        <img src="./assets/images/iconeContact.svg" alt="">
+                    </div>
+                    <p>Contact</p>
+                </div>
+            </div>
+        </section>
+
+
+        <div id="pageAPropos">
+            <span class="fermerLaPage" id="croixAPropos">X</span>
+            <div class="pageHeader"></div>
+            <div id="contenueAPropos">
+                
+                <div class="titreAPropos">
+                    <div class="partieImage">
+                        <img src="./assets/images/pp.jpg" alt="">
+                    </div>
+                    <div class="partieTexte">
+                        <h2>Amanitaa</h2>
+                        <p>Développeur web</p>
+                    </div>
+                    
+                </div>
+                <div class="texteAPropos">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet massa dui. Aenean iaculis tellus a augue luctus convallis. Integer suscipit erat tristique mauris ultricies consectetur. Fusce facilisis mattis elit, at rutrum orci lobortis vitae. Nam tempus pulvinar metus, sit amet pretium ipsum venenatis vitae. Cras quis nisi pulvinar, hendrerit sapien quis, commodo turpis. Nam vitae lacus placerat, consectetur mi et, consectetur nisl. Aenean tempor tincidunt nibh, id elementum mauris faucibus quis. Vestibulum blandit ligula ut quam cursus, nec tincidunt neque aliquet. Aenean maximus et nibh eleifend scelerisque. Aenean elementum convallis maximus. Duis a nibh in velit laoreet convallis. Maecenas at ligula laoreet, fringilla orci non, finibus ex.</p>
+                    <p>
+                    Curabitur et orci quis nunc commodo dapibus. Vestibulum ullamcorper mauris metus, a semper odio efficitur eget. Vivamus consequat luctus turpis nec imperdiet. Integer sit amet nulla vitae odio fringilla rutrum vel sed lacus. Integer in lacus quis nisi maximus dapibus et quis leo. Integer non turpis libero. Donec tempus sodales suscipit. Fusce ornare congue purus sit amet luctus. Donec pellentesque sit amet ex condimentum porttitor. Etiam tristique magna ex, consectetur dapibus purus facilisis sed. Pellentesque viverra lectus erat, ac laoreet ante posuere in.</p>
+                    <p>
+                    Duis viverra fringilla risus, sit amet consequat quam vestibulum quis. Duis metus tortor, finibus nec eros vitae, semper dapibus magna. Fusce ornare tempus tincidunt. Fusce orci quam, ultricies a lacinia in, eleifend vestibulum felis. Proin a nisl sed nisl facilisis faucibus a et augue. Fusce mattis ipsum ut risus facilisis, non scelerisque nisl rutrum. Sed tempor, dui at dapibus suscipit, quam eros hendrerit magna, et dapibus ante neque quis velit.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="pageProjet">
+            <span class="fermerLaPage" id="croixProjet">X</span>
+            <div class="pageHeader"></div>
+            <div id="modeDeTravail">
+                
+                <div id="logiciel">
+                    <h3>Outils Utilisés</h3>
+                    <p>GitHub VSCode Docker Figma </p>
+                </div>
+                <div id="languages">
+                    <h3>Languages de développement</h3>
+                    <p>HTML/CSS JavaScript PHP</p>
+                </div>
+            </div>
+            <div id="listeProjet">
+                <h2>Projet</h2>
+
+                <div class="articleProjet">
+                        <img src="./assets/images/pp.jpg" alt="" class="illustrationProjet">
+                        <div class="descriptionProjet">
+                            <h4>Titre</h4>
+                            <p>Duis viverra fringilla risus, sit amet consequat quam vestibulum quis. Duis metus tortor, finibus nec eros vitae, semper dapibus magna. Fusce ornare tempus tincidunt. Fusce orci quam, ultricies a lacinia in, eleifend vestibulum felis. Proin a nisl sed nisl facilisis faucibus a et augue. Fusce mattis ipsum ut risus facilisis, non scelerisque nisl rutrum. Sed tempor, dui at dapibus suscipit, quam eros hendrerit magna, et dapibus ante neque quis velit.</p>
+                            <button>--></button>
+                        </div>
+                </div>
+                <div class="articleProjet">
+                        <img src="./assets/images/pp.jpg" alt="" class="illustrationProjet">
+                        <div class="descriptionProjet">
+                            <h4>Titre</h4>
+                            <p>Duis viverra fringilla risus, sit amet consequat quam vestibulum quis. Duis metus tortor, finibus nec eros vitae, semper dapibus magna. Fusce ornare tempus tincidunt. Fusce orci quam, ultricies a lacinia in, eleifend vestibulum felis. Proin a nisl sed nisl facilisis faucibus a et augue. Fusce mattis ipsum ut risus facilisis, non scelerisque nisl rutrum. Sed tempor, dui at dapibus suscipit, quam eros hendrerit magna, et dapibus ante neque quis velit.</p>
+                            <button>--></button>
+                        </div>
+                </div>
+                <div class="articleProjet">
+                        <img src="./assets/images/pp.jpg" alt="" class="illustrationProjet">
+                        <div class="descriptionProjet">
+                            <h4>Titre</h4>
+                            <p>Duis viverra fringilla risus, sit amet consequat quam vestibulum quis. Duis metus tortor, finibus nec eros vitae, semper dapibus magna. Fusce ornare tempus tincidunt. Fusce orci quam, ultricies a lacinia in, eleifend vestibulum felis. Proin a nisl sed nisl facilisis faucibus a et augue. Fusce mattis ipsum ut risus facilisis, non scelerisque nisl rutrum. Sed tempor, dui at dapibus suscipit, quam eros hendrerit magna, et dapibus ante neque quis velit.</p>
+                            <button>--></button>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="pageContact">
+            <span class="fermerLaPage" id="croixContact">X</span>
+            <p>blah blah blah</p>
+            <button>salut</button>
+        </div>
+
+
+
+        <div class="background-bottom">
+            <img src="./assets/images/logoGithub.svg" alt="">
+        </div>
+
+
+
+    </body>
+
+
+
 </html>
